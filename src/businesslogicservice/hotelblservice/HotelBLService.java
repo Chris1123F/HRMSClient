@@ -1,7 +1,7 @@
 package businesslogicservice.hotelblservice;
 
 import vo.*;
-
+import util.*;
 
 public interface HotelBLService {
 

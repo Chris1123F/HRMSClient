@@ -1,6 +1,8 @@
 package dataservice.hoteldataservice;
 
 import po.*;
+import util.*;
+
 
 public interface HotelDataService {
 
