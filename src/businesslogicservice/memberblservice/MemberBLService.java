@@ -5,14 +5,12 @@ import util.*;
 
 public interface MemberBLService {
 
-	public boolean isCommonMember(String user_id);
-	public boolean isCorporateMember(String user_id);
+	public String commonMemberCreateNumber(CommonMemberVO member);
+	public String corporateMemberCreateNumber(CorporateMemberVO member);
 	
-	public String createMember_number(MemberVO member);
+	public ResultMessage commonMemberRegister(String user_id,String birthday);
+	public ResultMessage corporateMemberRegister(String user_id,String corporate,String birthday);
 	
-	public int getLevel(MemberVO vo);
-	
-	public MemberVO registerCommonMember(String user_id);
-	public MemberVO registerCorporateMember(String user_id);
-	
+	public int getCommonMemberLevel(ClientVO client);
+	public int getCorporateMemberLevel(ClientVO client);
 }

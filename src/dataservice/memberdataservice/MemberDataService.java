@@ -5,8 +5,9 @@ import util.*;
 
 public interface MemberDataService {
 
-	public ResultMessage add(String user_id);
-	public MemberPO find(String user_id);
-	public ResultMessage createMemberNumber(MemberPO member);
+	public ResultMessage addCommonMember(String user_id,String birthday);
+	public int find(ClientPO client);
+	public String commonMemberCreateNumber(CommonMemberPO member);
+	public ResultMessage addCorporateMember(String user_id,String corporate,String birthday);
 	
 }
